@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy GF Day, My Princess 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-candy">
+
+  <nav class="nav">
+    <a href="index.html" class="logo">💗 Princess Day</a>
+    <a href="moments.html" class="link">Our Moments</a>
+  </nav>
+
+  <main class="hero">
+    <div class="card soft-glow">
+      <div class="caption">
+      <h1 class="title">Happy Princess Day, My Princess ✨</h1>
+      <p class="subtitle">You make ordinary days feel like magic.</p>
+
+      <div class="lines">
+        <p>• Your smile is my favorite sunrise.</p>
+        <p>• Your laugh is my favorite song.</p>
+        <p>• With you, even tiny moments feel big and bright.</p>
+        <p>• Today is for you ~ for us ~ for love that always shows up.</p>
+      </div>
+
+      <div class="cta-row">
+        <button id="playBtn" class="btn heart">Play our song 🎶</button>
+        <a href="moments.html" class="btn pastel">See our moments →</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>This guy is just yours as a shadow, just feel the prences untill he's creating the empire we've dreamt of.</p>
+  </footer>
+
+  <!-- Music -->
+  <audio id="song" src="/assets/1111.mp3" preload="auto"></audio>
+  <script>
+    const playBtn = document.getElementById('playBtn');
+    const song = document.getElementById('song');
+    let playing = false;
+
+    playBtn.addEventListener('click', () => {
+      if (!playing) {
+        song.play();
+        playing = true;
+        playBtn.textContent = 'Pause music ⏸️';
+      } else {
+        song.pause();
+        playing = false;
+        playBtn.textContent = 'Play our song 🎶';
+      }
+    });
+  </script>
+</body>
+</html>
